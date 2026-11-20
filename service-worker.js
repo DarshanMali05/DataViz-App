@@ -1,12 +1,14 @@
 
-const CACHE_NAME = "dataviz-v1";
+const CACHE_NAME = "dataviz-v2";
 
-const FILES = [
+cconst FILES = [
     "./",
     "./index.html",
     "./style.css",
     "./script.js",
-    "./manifest.json"
+    "./manifest.json",
+    "./icon-192.png",
+    "./icon-512.png"
 ];
 
 self.addEventListener("install", event => {
