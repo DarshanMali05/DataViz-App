@@ -1,5 +1,5 @@
 
-const CACHE_NAME = "dataviz-v2";
+const CACHE_NAME = "dataviz-v3";
 
 cconst FILES = [
     "./",
