@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataViz - Data Visualization</title>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2563eb">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>DataViz</h1>
+        <p>Turn your data into beautiful charts</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Enter Your Data</h2>
+
+            <div class="input-group">
+                <input type="text" id="category"
+                    placeholder="Enter category name">
+                <input type="number" id="value"
+                    placeholder="Enter value">
+                <button onclick="addData()">Add Data</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Value</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="dataTable"></tbody>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>Data Visualization</h2>
+
+            <select id="chartType" onchange="drawChart()">
+                <option value="bar">Bar Chart</option>
+                <option value="pie">Pie Chart</option>
+                <option value="line">Line Chart</option>
+            </select>
+
+            <div class="chart-container">
+                <canvas id="myChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./service-worker.js");
+}
+</script>
+</body>
+</html>

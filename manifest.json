@@ -1,0 +1,10 @@
+
+{
+  "name": "DataViz - Data Visualization",
+  "short_name": "DataViz",
+  "description": "Create charts from your own data",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f1f5f9",
+  "theme_color": "#2563eb"
+}
